@@ -24,7 +24,7 @@
         }
 
         .nav{
-            background:rgba(255, 255, 255, 0.684);
+            background:rgba(255, 255, 255, 0.784);
             position: fixed;
             z-index: 1;
         }
@@ -623,8 +623,11 @@
                 top: 20%;
                 right:20px;
             }
-            #ham,#hideham{
+            #ham{
                 font-size: 40px;
+            }
+            #hideham{
+                font-size: 30px;
             }
             .logo{
                 width: fit-content;
@@ -677,6 +680,19 @@
             }
         }
 
+        @media (max-width:682px) {
+            .pointers{
+                display: none;
+            }
+            .inputpointers{
+                align-items: center;
+                margin-left: 50px;
+            }
+            .inputsubmit{
+                margin-left: 4rem !important;
+            }
+        }
+
     </style> 
 
     <!-- favicon -->
@@ -705,7 +721,7 @@
                     <input type="text" name="" id="lastname" placeholder="Last Name" class="inputname">
                     <input type="text" name="" id="phone" placeholder="Phone" class="inputname">
                     <input type="text" name="" id="city" placeholder="City" class="inputname">
-                    <input type="email" name="" id="email" placeholder="Email" class="inputemail">
+                    <!-- <input type="email" name="" id="email" placeholder="Email" class="inputemail"> -->
                     <input type="submit" value="Submit" class="inputsubmit" style="margin:5px auto;">
                 </form>
             </div>
